@@ -12,8 +12,10 @@
 "%"                   return '%'
 "("                   return '('
 ")"                   return ')'
+"="                   return '='
+";"                   return ';'
 "PI"                  return 'PI'
 "E"                   return 'E'
 <<EOF>>               return 'EOF'
+[a-zA-Z_]\w*          return 'ID'
 .                     return 'INVALID'
-
